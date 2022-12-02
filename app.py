@@ -36,7 +36,7 @@ def requestResults1(name):
     tweets_df.drop_duplicates(subset=['tidy_tweets'], keep=False)
     tweets_df['absolute_tidy_tweets'] = tweets_df['tidy_tweets'].str.replace("[^a-zA-Z# ]", "")
 
-    # Tokenization
+    # Autharization
     tokenized_tweet = tweets_df['absolute_tidy_tweets'].apply(lambda x: x.split())
     word_lemmatizer = WordNetLemmatizer()
     tokenized_tweet = tokenized_tweet.apply(lambda x: [word_lemmatizer.lemmatize(i) for i in x])
@@ -48,7 +48,7 @@ def requestResults1(name):
     bow_word_vectorizer = CountVectorizer(max_df=0.90, min_df=2, stop_words='english', max_features=50)
     bow_word_feature = bow_word_vectorizer.fit_transform(tweets_df['absolute_tidy_tweets'])
 
-#Ctagerise positive,negative and nutral tweet
+#Catagerise positive,negative and nutral tweet
     tweets_df['Prediction'] = pipeline.predict(bow_word_feature.toarray())
     tweets_df.drop(['tidy_tweets','absolute_tidy_tweets'],axis=1,inplace=True)
     tweets_df['Prediction'] = tweets_df['Prediction'].replace({'0':'Negative-Tweet', 0:'Negative-Tweet','1':'Positive-Tweet',1:'Positive-Tweet','-1':'Neutral-Tweet',-1:'Neutral-Tweet'})
@@ -83,6 +83,6 @@ def success(name):
    
     return render_template('home.html',  tables=[data.to_html(classes='data')], titles=data.columns.values)
 
-
+#main Function
 if __name__ == '__main__' :
     app.run(debug=True,port=5001)

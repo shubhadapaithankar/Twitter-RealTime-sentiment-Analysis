@@ -22,16 +22,14 @@ class TwitterClient(object):
         self.api = tweepy.API(auth, wait_on_rate_limit=True)
             
     
-    
-   
 
-    # Function of tweets fetch
-    def get_tweets(self, query, maxTweets = 50): 
+    # Function to fetch tweets 
+    def get_tweets(self, query, maxTweets = 40): 
         tweets = [] 
         sinceId = None
         max_id = -1
         tweetCount = 0
-        tweetsPerQry = 80
+        tweetsPerQry = 50
         
         while tweetCount < maxTweets:
             
