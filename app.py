@@ -48,15 +48,16 @@ def requestResults1(name):
     bow_word_vectorizer = CountVectorizer(max_df=0.90, min_df=2, stop_words='english', max_features=50)
     bow_word_feature = bow_word_vectorizer.fit_transform(tweets_df['absolute_tidy_tweets'])
 
-    tweets_df['prediction'] = pipeline.predict(bow_word_feature.toarray())
+#Ctagerise positive,negative and nutral tweet
+    tweets_df['Prediction'] = pipeline.predict(bow_word_feature.toarray())
     tweets_df.drop(['tidy_tweets','absolute_tidy_tweets'],axis=1,inplace=True)
-    tweets_df['prediction'] = tweets_df['prediction'].replace({'0':'Negative', 0:'Negative','1':'positive',1:'positive','-1':'neutral',-1:'neutral'})
+    tweets_df['Prediction'] = tweets_df['Prediction'].replace({'0':'Negative-Tweet', 0:'Negative-Tweet','1':'Positive-Tweet',1:'Positive-Tweet','-1':'Neutral-Tweet',-1:'Neutral-Tweet'})
     return tweets_df
 
 def requestResults(name):
     tweets = get_related_tweets(name)
-    tweets['prediction'] = pipeline.predict(tweets['tweet_text'])
-    data = str(tweets.prediction.value_counts()) + '\n\n'
+    tweets['Prediction'] = pipeline.predict(tweets['tweet_text'])
+    data = str(tweets.Prediction.value_counts()) + '\n\n'
     return data + str(tweets)
 
 app = Flask(__name__)
@@ -74,6 +75,7 @@ def get_data():
         user = request.form['search']
         return redirect(url_for('success', name=user))
 
+#Call Success
 
 @app.route('/success/<name>')
 def success(name):

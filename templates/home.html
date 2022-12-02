@@ -8,16 +8,16 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url('image.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+ 
+  background-color: #f8e7e8;
+  
 
 }
 
 .topnav {
   overflow: hidden;
   background-color: #3e0677;
+  padding: 20px;
 }
 table.dataframe, .dataframe th, .dataframe td {
   border: none;
@@ -35,13 +35,13 @@ table.dataframe, .dataframe th, .dataframe td {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 50px;
 }
 
 .topnav a:hover {
   background-color: #1b0cef;
   color: black;
-  
+  padding: 40px;
 }
 
 
@@ -50,20 +50,20 @@ table.dataframe, .dataframe th, .dataframe td {
   float: right ;
 }
 .button{
-    padding: 8px;
+    padding: 20px;
     background-color: rgb(175, 234, 191);
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 input[type=text] {
-  padding: 6px;
+  padding: 15px;
   margin-top: 8px;
   font-size: 17px;
   background-color:  rgb(175, 234, 191);
-  width: 700px;
-  border: 2px;
-  border-radius: 5px;
+  width: 800px;
+  border: 3px;
+  border-radius: 6px;
 }
 
 .topnav .search-container button {
@@ -98,6 +98,7 @@ input[type=text] {
     border: 1px solid rgb(235, 205, 205);
   }
   
+  
 }
 </style>
 </head>
@@ -109,13 +110,21 @@ input[type=text] {
   
 </div>
 
+
+
 <div style="padding-left:19px">
-  <h2> Twitter Positive and Negative tweet Sentiment Analysis </h2>
+<center>
+  <img src="https://storage.cloud.google.com/shubhada-bucket/Twitter-Logo.wine.png" width= "400" height="300"" />
+</center><h2> <center>Twitter Positive/Negative/Nutral tweet Sentiment Analysis </center> </h2>
   
   <div class="search-container">
+    
     <form action = "http://localhost:5001/" method = "post">
-     <input type="text" placeholder="Search" name="search" minlength="15">
+    <center>
+     <input type="text" placeholder="Search a word/sentence/tweet" name="search" minlength="17">
      <button class="button" type="submit"><i class="fa fa-search"></i></button>
+
+    </center>
    </form>
  </div>
 </div>
