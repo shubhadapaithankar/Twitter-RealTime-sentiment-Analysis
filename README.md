@@ -13,6 +13,7 @@ This document provides information about gathering data (tweets) from Twitter in
 * To get Twitter API credentials ,created the <a href="https://developer.twitter.com/en/portal/projects-and-apps" target="_blank">Twitter-Developer</a> account and generated the all screats For Reeal Time Tweets
 
 #### 2. Label the Data:
+
 * textblob : Used the textblob used to label the data based on the polarity of the tweet into positive, negative and neutral speech.
 * data cleaning:
 To remove patterns which are not alphabets and some unnecessary characters, the data has been processed to make the tweets free from unwanted characters.
@@ -26,12 +27,21 @@ After That used TF-IDF model for language modeling and document classification.
 ## Building and training the classifier
 
 1. To build and train the classifier. Used Tensor flow based model(LSTM) and GaussianNB model to train the data. Build and train a new feed-forward classifier using those features.
-2. Detail comparison of model is in Colab Notebbok : https://colab.research.google.com/drive/11HHN3xMfTzE3z1xYUZUgOHIi4pLX3VV7
-3. Download the model:  dump `naive_classifier , filename =" text_classification.joblib ` The model which has been trained in the previous step has been stored and downloaded from `colab notebbok` ,After that used flask and integrated with web application
+2. Detail of classification and comparison of model is in <a href="https://colab.research.google.com/drive/11HHN3xMfTzE3z1xYUZUgOHIi4pLX3VV7" target="_blank">Google_Colab_Notebook</a> 
+3. Download the model:  dump `naive_classifier , filename =" text_classification.joblib ` The model which has been trained in the previous step has been stored and downloaded from `colab notebbok` ,After that used flask and integrated with web application using html
 
 ### Model Comparison
 
+<img width="594" alt="Screen Shot 2022-12-02 at 8 50 29 PM" src="https://user-images.githubusercontent.com/99461999/205424224-4c20503b-0c73-41ed-8fc6-1bcf82b042da.png">
+
 [accuracy.pdf](https://github.com/shubhadapaithankar/twitter/files/10145649/accuracy.pdf)
+
+## Tech Stack
+* tweepy
+* nltk
+* pandas
+* numpy
+* matplotlib
 
 ## Tool Used in Project
 
@@ -47,11 +57,13 @@ https://user-images.githubusercontent.com/99461999/205412387-60aab6c1-967c-42b0-
 
 ## Running Steps:
 
+
 <img width="1440" alt="Screen Shot 2022-12-02 at 4 11 36 PM" src="https://user-images.githubusercontent.com/99461999/205412450-e705ad18-dedf-41b5-9c99-21a94eefe8d0.png">
 <img width="1440" alt="Screen Shot 2022-12-02 at 4 11 56 PM" src="https://user-images.githubusercontent.com/99461999/205412458-9b2ac540-c07d-4f2e-b94c-516226d82271.png">
 <img width="1440" alt="Screen Shot 2022-12-02 at 4 12 11 PM" src="https://user-images.githubusercontent.com/99461999/205412465-a2e1946c-9286-4842-8ad7-d247b47e689c.png">
 <img width="1419" alt="Screen Shot 2022-12-02 at 8 47 52 PM" src="https://user-images.githubusercontent.com/99461999/205424126-70bec75a-945f-4624-a835-6b376b126a89.png">
 
+### Full Application Working and testing Video :  <a href="https://youtu.be/RiLHzY1w3sM" target="_blank">Link</a> 
 
 ### Refrance: 
 1. https://github.com/kaustav202/RealTime-TwitterDataAnalysis
