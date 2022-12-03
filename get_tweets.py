@@ -29,4 +29,9 @@ def get_related_tweets(text_query):
     except BaseException as e:
         print('failed,', str(e))
         time.sleep(3)
+        
+        
+  
+
+#Refrance: https://github.com/vamshidhar199/twitterapp
 
