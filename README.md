@@ -15,7 +15,6 @@ This document provides information about gathering data (tweets) from Twitter in
 #### 2. Label the Data:
 Tweets Preprocessing and Cleaning: Preprocessing text data is a crucial step since it prepares the unprocessed text for mining, making it simpler to extract information from the text and use machine learning algorithms on it. There is a greater likelihood that you will be working with noisy and erratic data if we miss this stage. The goal of this phase is to remove any irrelevant information from the tweets, such as punctuation, special characters, numerals, and terms that don't add much meaning when read in context.
 
-
 * textblob : Used the textblob used to label the data based on the polarity of the tweet into positive, negative and neutral speech.
 * data cleaning:
 To remove patterns which are not alphabets and some unnecessary characters, the data has been processed to make the tweets free from unwanted characters.
@@ -31,6 +30,9 @@ After That used TF-IDF model for language modeling and document classification.
 1. To build and train the classifier. Used Tensor flow based model(LSTM) and GaussianNB model to train the data. Build and train a new feed-forward classifier using those features.
 2. Detail of classification and comparison of model is in <a href="https://colab.research.google.com/drive/11HHN3xMfTzE3z1xYUZUgOHIi4pLX3VV7" target="_blank">Google_Colab_Notebook</a> 
 3. Download the model:  dump `naive_classifier , filename =" text_classification.joblib ` The model which has been trained in the previous step has been stored and downloaded from `colab notebbok` ,After that used flask and integrated with web application using html
+### Model Training
+
+<img width="609" alt="Screen Shot 2022-12-02 at 9 41 01 PM" src="https://user-images.githubusercontent.com/99461999/205426208-97651f50-450e-4f89-b2ac-373a0f6969ec.png">
 
 ### Model Comparison
 
