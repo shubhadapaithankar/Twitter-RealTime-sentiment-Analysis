@@ -1,4 +1,4 @@
-# Twitter Sentimental Analysis
+# Twitter sentiment Analysis
 
 ## Introduction:
 This document provides information about gathering data (tweets) from Twitter in real time using the Twitter API and building a model that would determine if a tweet is positive, negative, or neutral. It also discusses the pre-processing and the GaussianNB model that was used to train the data. The article concludes by discussing how to utilize the Flask framework to build a user interface for interacting with the model and making predictions based on real-time tweets.
