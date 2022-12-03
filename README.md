@@ -33,7 +33,8 @@ After That used TF-IDF model for language modeling and document classification.
 ## Building and training the classifier
 
 1. To build and train the classifier. Used Tensor flow based model(LSTM) and GaussianNB model to train the data. Build and train a new feed-forward classifier using those features.
-2. Download the model:  dump `naive_classifier , filename =" text_classification.joblib ` The model which has been trained in the previous step has been stored and downloaded from `colab notebbok` ,After that used flask and integrated with web application
+2. Detail comparison of model is in Colab Notebbok : https://colab.research.google.com/drive/11HHN3xMfTzE3z1xYUZUgOHIi4pLX3VV7
+3. Download the model:  dump `naive_classifier , filename =" text_classification.joblib ` The model which has been trained in the previous step has been stored and downloaded from `colab notebbok` ,After that used flask and integrated with web application
 
 
 
