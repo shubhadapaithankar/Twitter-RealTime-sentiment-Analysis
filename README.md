@@ -34,7 +34,7 @@ After That used TF-IDF model for language modeling and document classification.
 
 <img width="609" alt="Screen Shot 2022-12-02 at 9 41 01 PM" src="https://user-images.githubusercontent.com/99461999/205426208-97651f50-450e-4f89-b2ac-373a0f6969ec.png">
 
-### Model Comparison
+## Model Comparison
 
 <img width="594" alt="Screen Shot 2022-12-02 at 8 50 29 PM" src="https://user-images.githubusercontent.com/99461999/205424224-4c20503b-0c73-41ed-8fc6-1bcf82b042da.png">
 
@@ -48,7 +48,6 @@ After That used TF-IDF model for language modeling and document classification.
 * matplotlib
 
 ## Tool Used in Project
-
 1. Google Colab to train the model
 2. Flask 
 3. Python3
@@ -67,8 +66,8 @@ https://user-images.githubusercontent.com/99461999/205412387-60aab6c1-967c-42b0-
 <img width="1440" alt="Screen Shot 2022-12-02 at 4 12 11 PM" src="https://user-images.githubusercontent.com/99461999/205412465-a2e1946c-9286-4842-8ad7-d247b47e689c.png">
 <img width="1419" alt="Screen Shot 2022-12-02 at 8 47 52 PM" src="https://user-images.githubusercontent.com/99461999/205424126-70bec75a-945f-4624-a835-6b376b126a89.png">
 
-### Full Application Working and testing Video :  <a href="https://youtu.be/RiLHzY1w3sM" target="_blank">Link</a> 
+## Full Application Working and testing Video :  <a href="https://youtu.be/RiLHzY1w3sM" target="_blank">Link</a> 
 
-### Refrance: 
+## Refrance: 
 1. https://github.com/kaustav202/RealTime-TwitterDataAnalysis
 2. https://github.com/sharmaroshan/Twitter-Sentiment-Analysis
