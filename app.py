@@ -11,7 +11,7 @@ import pandas as pd
 import nltk
 nltk.download('all')
 
-pipeline = load("text_classification (3).joblib")
+pipeline = load("text_classification.joblib")
 
 def remove_pattern(text, pattern_regex):
         r = re.findall(pattern_regex, text)
