@@ -13,6 +13,8 @@ This document provides information about gathering data (tweets) from Twitter in
 * To get Twitter API credentials ,created the <a href="https://developer.twitter.com/en/portal/projects-and-apps" target="_blank">Twitter-Developer</a> account and generated the all screats For Reeal Time Tweets
 
 #### 2. Label the Data:
+Tweets Preprocessing and Cleaning: Preprocessing text data is a crucial step since it prepares the unprocessed text for mining, making it simpler to extract information from the text and use machine learning algorithms on it. There is a greater likelihood that you will be working with noisy and erratic data if we miss this stage. The goal of this phase is to remove any irrelevant information from the tweets, such as punctuation, special characters, numerals, and terms that don't add much meaning when read in context.
+
 
 * textblob : Used the textblob used to label the data based on the polarity of the tweet into positive, negative and neutral speech.
 * data cleaning:
