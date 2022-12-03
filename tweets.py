@@ -14,22 +14,20 @@ class TwitterClient(object):
         
         # OAuthHandler  
         auth = OAuthHandler(consumer_key, consumer_secret) 
-        # set access token and secret 
         auth.set_access_token(access_token, access_token_secret) 
         
-        # create tweepy API 
+        # create API 
         
         self.api = tweepy.API(auth, wait_on_rate_limit=True)
             
     
-
-    # Function to fetch tweets 
-    def get_tweets(self, query, maxTweets = 40): 
+    # Function to fetch the tweets 
+    def get_tweets(self, query, maxTweets = 50): 
         tweets = [] 
         sinceId = None
         max_id = -1
         tweetCount = 0
-        tweetsPerQry = 50
+        tweetsPerQry = 80
         
         while tweetCount < maxTweets:
             
@@ -48,7 +46,7 @@ class TwitterClient(object):
                                                 max_id=str(max_id - 1),
                                                 since_id=sinceId)
             if not new_tweets:
-                print("No more tweets found")
+                print("No Tweets found")
                 break
                     
             for tweet in new_tweets:
