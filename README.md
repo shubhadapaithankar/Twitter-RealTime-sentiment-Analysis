@@ -14,21 +14,27 @@ This document provides information about gathering data (tweets) from Twitter in
 
 ##  Tweeter Tweet Preprocessing
 
-1. Twitter API Access :
+#### 1. Twitter API Access :
+
 * With the right access permissions, a set of api tokens, and secrets, we can utilize Twitter's developer accounts to access the social media platform's data through its API services.
 * To get Twitter API credentials ,created the <a href="https://developer.twitter.com/en/portal/projects-and-apps" target="_blank">Twitter-Developer</a> account and generated the all screats For Reeal Time Tweets
-2. Label the Data
+
+#### 2. Label the Data:
 * textblob : Used the textblob used to label the data based on the polarity of the tweet into positive, negative and neutral speech.
-3. data cleaning:
-*  To remove patterns which are not alphabets and some unnecessary characters, the data has been processed to make the tweets free from unwanted characters.
-4. Lemmatization:
-* Lemmatization is the process of combining a word's several inflected forms into a single unit for analysis. Similar to stemming, lemmatization adds context to the words. As a result, it ties words with related meanings together.
-5. Bag of words model
-* We use model to representing text data when modeling text with machine learning algorithms.
-6. TF-IDF model 
-* After That used TF-IDF model for language modeling and document classification.
+* data cleaning:
+To remove patterns which are not alphabets and some unnecessary characters, the data has been processed to make the tweets free from unwanted characters.
+* Lemmatization:
+Lemmatization is the process of combining a word's several inflected forms into a single unit for analysis. Similar to stemming, lemmatization adds context to the words. As a result, it ties words with related meanings together.
+* Bag of words model:
+We use model to representing text data when modeling text with machine learning algorithms.
+* TF-IDF model :
+After That used TF-IDF model for language modeling and document classification.
 
 ## Building and training the classifier
+
+1. To build and train the classifier. Used Tensor flow based model(LSTM) and GaussianNB model to train the data. Build and train a new feed-forward classifier using those features.
+2. Download the model:  dump `naive_classifier , filename =" text_classification.joblib ` The model which has been trained in the previous step has been stored and downloaded from `colab notebbok` ,After that used flask and integrated with web application
+
 
 
 
